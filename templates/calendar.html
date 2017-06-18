@@ -1,0 +1,83 @@
+{% extends "basetemplate_spiegel.html" %}
+{% block title %}
+     calendar
+{% endblock %}
+{% block body %}
+<div class="container">
+
+<h2 style="color: white; font-family: 'Roboto Medium'; font-size: 50px; margin-top: 100px">Agenda</h2>
+       <div class="agenda">
+        <div class="table-responsive">
+            <table class="table table-condensed table-bordered">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Single event in a single day -->
+                    <tr>
+                        <td class="agenda-date" class="active" rowspan="1">
+                            <div class="dayofmonth">22</div>
+                            <div class="dayofweek">Thursday</div>
+                            <div class="shortdate text-muted">June, 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            8:30 AM - 18:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Project1 - Eindpresentatie
+                            </div>
+                        </td>
+                    </tr>
+
+                    <!-- Multiple events in a single day (note the rowspan) -->
+                    <tr>
+                        <td class="agenda-date" class="active" rowspan="3">
+                            <div class="dayofmonth">30</div>
+                            <div class="dayofweek">Friday</div>
+                            <div class="shortdate text-muted">June, 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            8:30 AM - 12:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Feedback_NMCT
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            14:30 PM - 16:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Naar de winkel gaan
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            18:00 - 00:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Bday party
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="indicator">
+<img src="/static/images/Untitled-3.png" width="192px" height="108px">
+
+</div>
+{% endblock %}

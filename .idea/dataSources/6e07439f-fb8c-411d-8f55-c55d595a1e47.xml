@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="ENMDatabase@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="ENMDatabase">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="hello"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <table id="7" parent="2" name="Images"/>
+    <table id="8" parent="2" name="SensorNaam"/>
+    <table id="9" parent="2" name="Smartmirror"/>
+    <table id="10" parent="2" name="Temperatuursmeting">
+      <Comment>sensorwaarsde + timestamp</Comment>
+    </table>
+    <table id="11" parent="2" name="WelkomsBoodschappen"/>
+    <column id="12" parent="7" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="13" parent="7" name="Imagefile">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="14" parent="8" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="15" parent="8" name="naam">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="16" parent="9" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="17" parent="9" name="naam">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="18" parent="9" name="locatie">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="19" parent="10" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="20" parent="10" name="SensorWaarde">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="21" parent="10" name="timeStamp">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="22" parent="11" name="ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="23" parent="11" name="Boodschap">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </column>
+  </database-model>
+</dataSource>

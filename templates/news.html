@@ -1,0 +1,78 @@
+{% extends "basetemplate_spiegel.html" %}
+{% block title %}
+     news
+{% endblock %}
+{% block body %}
+<div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+        <div class="item active">
+          <p id="foto1"></p>
+           <div class="carousel-caption">
+            <h4><a href="#" id="titel1"></a></h4>
+            <p id="beschrijving1"></p>
+          </div>
+        </div><!-- End Item -->
+
+         <div class="item">
+          <p id="foto2"></p>
+           <div class="carousel-caption">
+            <h4><a href="#" id="titel2"></a></h4>
+            <p id="beschrijving2"></p>
+          </div>
+        </div><!-- End Item -->
+
+        <div class="item">
+          <p id="foto3"></p>
+           <div class="carousel-caption">
+            <h4><a href="#" id="titel3"></a></h4>
+            <p id="beschrijving3"></p>
+          </div>
+        </div><!-- End Item -->
+
+        <div class="item">
+          <p id="foto4"></p>
+           <div class="carousel-caption">
+            <h4><a href="#" id="titel4"></a></h4>
+            <p id="beschrijving4"></p>
+          </div>
+        </div><!-- End Item -->
+
+        <div class="item">
+          <p id="foto5"></p>
+           <div class="carousel-caption">
+            <h4><a href="#" id="titel5"></a></h4>
+            <p id="beschrijving5"></p>
+          </div>
+        </div><!-- End Item -->
+
+      </div><!-- End Carousel Inner -->
+
+
+    <ul class="list-group col-sm-4">
+      <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active"><h4 id="titelkop1"></h4></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="list-group-item"><h4 id="titelkop2"></h4></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="list-group-item"><h4 id="titelkop3"></h4></li>
+      <li data-target="#myCarousel" data-slide-to="3" class="list-group-item"><h4 id="titelkop4"></h4></li>
+      <li data-target="#myCarousel" data-slide-to="4" class="list-group-item"><h4 id="titelkop5"></h4></li>
+    </ul>
+
+      <!-- Controls -->
+      <div class="carousel-controls">
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+      </div>
+
+    </div><!-- End Carousel -->
+</div>
+<div class="indicator">
+<img src="/static/images/Untitled-2.png" width="192px" height="108px">
+
+</div>
+{% endblock %}
