@@ -12,7 +12,7 @@ function success(position) {
         $('#city').html(location.results[0].address_components[2].long_name);
 
         var weer = new XMLHttpRequest();
-        weer.open("GET", "http://api.wunderground.com/api/0cd7adf7bde0edea/conditions/q/CA/Kortrijk.json", false);
+        weer.open("GET", "http://api.wunderground.com/api/0cd7adf7bde0edea/conditions/q/CA/Zulte.json", false);
         weer.send(null);
 
         var r = JSON.parse(weer.response);
